@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(void) {
+	int f;
+	scanf_s("%d", &f);
+
+	for (int i = 0; i < f; i++)
+	{
+		for (int j = i; j < f - 1; j++)
+		{
+			printf(" ");
+		}
+		for (int k = 0; k < i * 2 + 1; k++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+	return 0;
+}
