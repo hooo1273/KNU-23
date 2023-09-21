@@ -5,11 +5,11 @@ int main(void) {
 	{
 		for (int j = 0; j < i; j++)
 		{
-			printf("   ");
+			printf("    ");
 		}
-		if (i % 2 == 0) printf("| 0 |");
+		if (i % 2 == 0) printf("| O |");
 		else printf("| X |");
-		printf("\n--------------------\n");
+		printf("\n---------------------\n");
 	}
 	return 0;
 }
