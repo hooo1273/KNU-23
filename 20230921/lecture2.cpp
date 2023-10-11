@@ -1,7 +1,5 @@
 #include <stdio.h>
 
-void calculator();
-
 int main(void) {
 	int sel, num1, num2;
 	printf("1.더하기 2.빼기 3.곱하기 4.나누기");
