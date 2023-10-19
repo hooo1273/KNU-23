@@ -13,6 +13,20 @@ void print_list(NODE* head)
 		printf("%d", p->data);
 		p = p->next;
 	}
+	printf("\n");
+}
+
+void insert_node(NODE* head, int data)
+{
+	NODE* p = head->next;
+	while (p->next != NULL) {
+		printf("%d", p->data);
+		p = p->next;
+	}
+	NODE* new_node = (NODE*)malloc(sizeof(NODE));
+	new_node->data = data;
+	new_node->next = p->next;
+	p->next = new_node;
 }
 
 int main(void) {
@@ -35,7 +49,9 @@ int main(void) {
 	n3->next = n2->next;
 	n2->next = n3;
 
-	print_list(head);
+	insert_node(head, 4);
+	insert_node(head, 5);
 
+	print_list(head);
 	return 0;
 }
